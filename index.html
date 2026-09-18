@@ -91,3 +91,52 @@ search.oninput=e=>{
 
 </body>
 </html>
+<script>
+
+const products=[];
+
+const image Map={
+
+};
+
+"T-Shirt":"tshirt, fashion",
+
+"Shirt":"shirt, men, fashion",
+
+"Jeans":"jeans, denim, fashion",
+
+"Hoodie":"hoodie, streetwear",
+
+"Sweatshirt":"sweatshirt, streetwear"
+
+function add(cat, count, price,sizes){ for(let i=1;i<=count;i++){
+
+products.push({
+
+name:cat+" "+i,
+
+category:cat,
+
+price:price,
+
+size:sizes.join(", "),
+
+img: 'https://loremflickr.com/400/500/${imageMap[cat]} ?lock=${products.length+1}`
+
+}); }
+
+}
+
+add("T-Shirt",100,200, ["M","L","XL"]);
+
+add("Shirt",100,250, ["M","L","XL"]);
+
+add("Jeans",100,300,["28","30","32","34"]);
+
+add("Hoodie",100,250, ["M","L","XL"]);
+
+add("Sweatshirt", 100, 250, ["M","L","XL"]);
+
+// बाकी का आपका कोड जैसा है वैसा ही रहेगा।
+
+</script>
